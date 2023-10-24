@@ -16,7 +16,7 @@ if __name__ == '__main__':
         exit(1)
 
     a = 1 / math.factorial(n)
-    S, k = 0, 0
+    S, k = a, 0
     while math.fabs(a) > EPS:
         a *= -(x ** 2 / (4 * (k + 1) * (k + 1 + n)))
         S += a
